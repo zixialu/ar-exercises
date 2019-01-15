@@ -8,5 +8,5 @@ puts "----------"
 @store1 = Store.find_by(id: 1)
 @store2 = Store.find_by(id: 2)
 
-@store1.annual_revenue *= 2000
+@store1.annual_revenue += 1
 @store1.save
