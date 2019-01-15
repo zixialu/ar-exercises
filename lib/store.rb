@@ -11,6 +11,10 @@ class Store < ActiveRecord::Base
         :mens_apparel,
         "Store must carry at least one of men's and women's apparel"
       )
+      errors.add(
+        :womens_apparel,
+        "Store must carry at least one of men's and women's apparel"
+      )
     end
   end
 end
